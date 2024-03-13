@@ -1,28 +1,23 @@
+import './Expenseitem.css';
+
+
 function ExpenseItem() {
+
+  const expenseDate = new Date(2021,  2 , 28)
+  const expenseTitle = 'Car Insurence' 
+  const expenseAmonut =2000
+  const expenseLocation = 'chennai'
   return (
-    <div>
-      <div>
-        <div>March 18 </div>
-        <div>
-          <h2>Food</h2>
+      <div className="expense-item">
+        <div>{expenseDate.toISOString()} </div>
+        <div className="expense-item__description">
+          <h2 >{expenseTitle}</h2>
         </div>
-        <div>10</div>
+        <div>{expenseLocation}</div>
+        <div className="expense-item__price">{expenseAmonut}</div>
+        
       </div>
-      <div>
-        <div>March 18 </div>
-        <div>
-          <h2>petrol</h2>
-        </div>
-        <div>100</div>
-      </div>
-      <div>
-        <div>March 18 </div>
-        <div>
-          <h2>Movie</h2>
-        </div>
-        <div>200</div>
-      </div>
-    </div>
+      
   );
 }
 
