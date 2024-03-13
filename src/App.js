@@ -2,10 +2,10 @@ import ExpenseItem from "./components/Expenseitem";
 
 function App() {
   const expenses = [
-    { title: "rent", amount: 94, date: new Date(2024, 2, 12).toISOString() ,location:'delhi'},
-    { title: "food", amount: 104, date: new Date(2024, 2, 12).toISOString() ,location:'chennai'},
-    { title: "petrol", amount:200, date: new Date(2024, 2, 12).toISOString() ,location:'chennai'},
-    { title: "movie", amount: 250, date: new Date(2024, 2, 12).toISOString() ,location:'mumbai'},
+    { title: "rent", amount: 94, date: new Date(2024, 2, 12) ,location:'delhi'},
+    { title: "food", amount: 104, date: new Date(2024, 2, 12),location:'chennai'},
+    { title: "petrol", amount:200, date: new Date(2024, 2, 12) ,location:'chennai'},
+    { title: "movie", amount: 250, date: new Date(2024, 2, 12) ,location:'mumbai'},
   ];
   return (
     <div>
