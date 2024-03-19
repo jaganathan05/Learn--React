@@ -15,9 +15,10 @@ const App = () => {
  
   const addExpenseHandler = (expense) => {
    
-    const updatedExpenses = [...expenses, expense];
-    
-    setExpenses(updatedExpenses);
+    console.log(expense)
+    setExpenses((preExpenses) =>{
+return [expense,...preExpenses]
+    });
   };
   console.log(expenses)
 
