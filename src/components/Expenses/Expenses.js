@@ -4,7 +4,7 @@ import "./Expenses.css";
 import React from 'react';
 
 const Expenses = (props) =>{
-    const expenses = props.expenses
+    const expenses = props.Expenses
   return (
     <Card className="expenses">
       <ExpenseItem
